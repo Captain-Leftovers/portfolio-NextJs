@@ -1,8 +1,14 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import type { Metadata } from 'next'
 
-const inter = Inter({ subsets: ['latin'] })
+import NavBar from './components/NavBar/NavBar'
+
+const montserrat = Montserrat({
+	subsets: ['latin'],
+	weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
+	fallback: ['sans-serif', 'system-ui'],
+})
 
 export const metadata: Metadata = {
 	title: 'Default Layout Meta',
@@ -16,10 +22,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>{children}</body>
+			<body className={montserrat.className}>
+				<NavBar />
+				{children}
+			</body>
 		</html>
 	)
 }
-
-
- 
