@@ -97,3 +97,20 @@ a {
     color-scheme: dark;
   }
 }
+
+
+.globalNotFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top:10rem;
+  font-size: xx-large;
+}
+
+.globalNotFoundLinkBack {
+  font-weight: bold;
+  text-decoration: underline;
+  border: 1px solid black;
+  
+}

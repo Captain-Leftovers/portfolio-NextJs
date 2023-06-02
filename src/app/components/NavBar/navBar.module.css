@@ -1,0 +1,49 @@
+.header {
+	background-color: aqua;
+	width: 100%;
+	padding: 2rem 8rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navFirst {
+	margin-right: 1rem;
+	position: relative;
+}
+
+.navInBetween {
+	margin: 0 1rem;
+	position: relative;
+}
+
+.navLast {
+	margin-left: 1rem;
+	position: relative;
+}
+
+.spanUnderline {
+	height: 1px;
+	display: inline-block;
+	width: 0;
+	background-color: black;
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+}
+
+.parentLink:hover .spanUnderline {
+	width: 100%;
+	transition: width 0.3s ease-in-out;
+}
+
+.spanUnderlineActive {
+	width: 100%;
+}
+
+.navIcons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}

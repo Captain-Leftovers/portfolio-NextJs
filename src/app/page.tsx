@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 
 
 export default function Home() {
+
 	return <main className={styles.main}>
      <p>Home Component</p>
     <div>
