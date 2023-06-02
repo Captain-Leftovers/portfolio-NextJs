@@ -1,9 +1,11 @@
 'use client'
 
 import Link from 'next/link'
+import { motion } from "framer-motion"
 import styles from './navBar.module.css'
 import { usePathname } from 'next/navigation'
 import { GithubSVG, LinkedInSVG, TwitterSVG } from '../icons/icons'
+
 
 export default function NavBar() {
 	const pathname = usePathname()
@@ -64,27 +66,35 @@ export default function NavBar() {
 				</Link>
 			</nav>
 			<nav className={styles.navIcons}>
-				<a
+				<motion.a
 					href="https://twitter.com/BeeondwebIvanov"
 					target="_blank"
 					className={styles.navFirst}
+					whileHover={{y: -2}}
+					whileTap={{scale:0.9}}
 				>
 					<TwitterSVG />
-				</a>
-				<a
+				</motion.a>
+				<motion.a
 					href="https://www.linkedin.com/in/dobromir-ivanov-710136261/"
 					target="_blank"
 					className={styles.navInBetween}
+					whileHover={{y: -2}}
+					whileTap={{scale:0.9}}
+
 				>
 					<LinkedInSVG />
-				</a>{' '}
-				<a
+				</motion.a>{' '}
+				<motion.a
 					href="https://github.com/Captain-Leftovers"
 					target="_blank"
 					className={styles.navInBetween}
+					whileHover={{y: -2}}
+					whileTap={{scale:0.9}}
+
 				>
 					<GithubSVG />
-				</a>{' '}
+				</motion.a>{' '}
 				<a
 					href="/"
 					target="_blank"
