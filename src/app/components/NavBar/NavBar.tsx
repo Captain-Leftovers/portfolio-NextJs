@@ -1,11 +1,10 @@
 'use client'
 
 import Link from 'next/link'
-import { motion } from "framer-motion"
+import { motion } from 'framer-motion'
 import styles from './navBar.module.css'
 import { usePathname } from 'next/navigation'
 import { GithubSVG, LinkedInSVG, TwitterSVG } from '../icons/icons'
-
 
 export default function NavBar() {
 	const pathname = usePathname()
@@ -70,8 +69,8 @@ export default function NavBar() {
 					href="https://twitter.com/BeeondwebIvanov"
 					target="_blank"
 					className={styles.navFirst}
-					whileHover={{y: -2}}
-					whileTap={{scale:0.9}}
+					whileHover={{ y: -2 }}
+					whileTap={{ scale: 0.9 }}
 				>
 					<TwitterSVG />
 				</motion.a>
@@ -79,9 +78,8 @@ export default function NavBar() {
 					href="https://www.linkedin.com/in/dobromir-ivanov-710136261/"
 					target="_blank"
 					className={styles.navInBetween}
-					whileHover={{y: -2}}
-					whileTap={{scale:0.9}}
-
+					whileHover={{ y: -2 }}
+					whileTap={{ scale: 0.9 }}
 				>
 					<LinkedInSVG />
 				</motion.a>{' '}
@@ -89,9 +87,8 @@ export default function NavBar() {
 					href="https://github.com/Captain-Leftovers"
 					target="_blank"
 					className={styles.navInBetween}
-					whileHover={{y: -2}}
-					whileTap={{scale:0.9}}
-
+					whileHover={{ y: -2 }}
+					whileTap={{ scale: 0.9 }}
 				>
 					<GithubSVG />
 				</motion.a>{' '}
@@ -106,3 +103,5 @@ export default function NavBar() {
 		</header>
 	)
 }
+
+//TODO : Add a hamburger menu for mobile devices or a dropdown menu or not at all maybe add logo
