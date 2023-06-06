@@ -1,6 +1,7 @@
 import styles from './page.module.css'
-import Link from 'next/link'
 import type { Metadata } from 'next'
+import HeroImage from './components/HeroImage/HeroImage'
+import Label from './components/Label/Label'
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -11,10 +12,9 @@ export const metadata: Metadata = {
 export default function Home() {
 
 	return <main className={styles.main}>
-     <p>Home Component</p>
-    <div>
-      <Link href="/about">About</Link>
-    </div>
+    
+    {/* <HeroImage /> */}
+    <Label />
   </main>
 
 }
