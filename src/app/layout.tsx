@@ -3,6 +3,8 @@ import { Montserrat } from 'next/font/google'
 import type { Metadata } from 'next'
 
 import NavBar from './components/NavBar/NavBar'
+import Footer from './components/Footer/Footer'
+import HireMe from './components/HireMe/HireMe'
 
 const montserrat = Montserrat({
 	subsets: ['latin'],
@@ -26,6 +28,8 @@ export default function RootLayout({
 			<body className={montserrat.className}>
 				<NavBar />
 				{children}
+				<HireMe />
+				<Footer />
 			</body>
 		</html>
 	)
