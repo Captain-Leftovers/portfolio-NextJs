@@ -10,9 +10,29 @@
 .svgContainer {
 	width: 12rem;
 	height: auto;
-	background-color: red;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: relative;
+}
+
+.hireLink {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+	width: 6.5rem;
+	height: 6.5rem;
+	border-radius: 50%;
+	background-image: url('/eclipse.png');
+	background-color: rgba(15, 125, 135, 0);
+	background-blend-mode: color-burn;
+	background-position: center;
+	transition: background-color 0.5s ease-in-out;
+	
+}
+
+.hireLink:hover {
+	background-color: rgba(242, 218, 138, 0.468);
 }

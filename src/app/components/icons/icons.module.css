@@ -2,3 +2,25 @@
     width: 100%;
     height: auto;
 }
+
+.circleSVG {
+/* make it spin from 0 degrees to 360 deg */
+    animation: rotate 10s infinite linear;
+    width: 100%;
+    height: auto;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg)
+    }
+  
+
+
+}
+
+
